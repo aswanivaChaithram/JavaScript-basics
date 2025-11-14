@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form using Foundation</title>
+    <!-- Foundation CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.9.0/dist/css/foundation.min.css">
+  <style>
+    .data {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .input-group-button {
+        padding: 10px;
+    }
+  </style>
+</head>
+<body>
+    <div class="grid-container">
+        <form action="#" class="input-group grid-y">
+            <div class="data">
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" class="input-group-field">
+            </div>
+            <div class="data">
+                <label for="mobile-number">Mobile Number</label>
+                <input type="number" id="mobile-number" class="input-group-field">
+            </div>
+            <div class="data">
+                <label for="email-address">Email Address</label>
+                <input type="email" id="email-address" class="input-group-field">
+            </div>
+            <div class="data">
+                <label for="password">Password</label>
+                <input type="password" id="password" class="input-group-field">
+            </div>
+            <div class="data">
+                <label for="gender">Gender</label>
+                <input type="radio" id="gender" class="input-group-field"> Male 
+                <input type="radio" id="gender" class="input-group-field"> Female
+                <input type="radio" id="gender" class="input-group-field"> Others
+            </div>
+            <div class="data">
+                <input type="checkbox" id="terms" class="input-group-field">
+                <label for="terms">Accept Terms and Conditions</label>
+            </div>
+            <div class="input-group-button">
+                <input type="button" class="button" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
