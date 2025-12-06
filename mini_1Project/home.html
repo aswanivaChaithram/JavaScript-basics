@@ -6,7 +6,6 @@
     <title>Tasty Bites</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/logo.jpeg" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="container">
@@ -27,20 +26,7 @@
                 </ul>
             </nav>
 
-            <button class="nav-toggle" aria-label="Open menu">☰</button>
-        </div>
-
-        <!-- Mobile Sidebar -->
-        <div class="mobile-sidebar" id="mobileSidebar">
-            <div class="mobile-sidebar-content">
-                <button class="nav-close" id="navClose">✖</button>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#menu">Menu</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
+            <button class="nav-toggle">☰</button>
         </div>
 
         <!--Hero section-->
@@ -259,7 +245,7 @@
 
     <div class="mobile-sidebar" id="mobileSidebar" aria-hidden="true">
         <div class="mobile-sidebar-content">
-            <button class="nav-close" id="navClose" aria-label="Close menu">✖</button>
+            <button class="nav-close" id="navClose" >✖</button>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Us</a></li>
@@ -267,23 +253,19 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
-        <div class="mobile-overlay" id="mobileOverlay"></div>
     </div>
 
     <script>
         const menuBtn = document.querySelector('.nav-toggle');
         const sidebar = document.querySelector('.mobile-sidebar');
-        const overlay = document.querySelector('.mobile-overlay');
         const closeBtn = document.querySelector('.nav-close');
 
         menuBtn.addEventListener('click', () => {
             sidebar.classList.add('open');
-            overlay.classList.add('open');
         });
 
         closeBtn.addEventListener('click', () => {
             sidebar.classList.remove('open');
-            overlay.classList.remove('open');
         });
 
     </script>
