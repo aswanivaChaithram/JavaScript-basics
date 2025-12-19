@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+    <script>
+
+        // Student Object
+
+        const student = {
+            name: "Mary",
+            age: 22,
+            course: "Mathematics",
+            isPlaced: true
+        };
+
+        console.log("Accessing values using dot notation");
+        console.log("Name: " + student.name); //Mary
+        console.log("Age: " + student.age); //22
+        console.log("Course: " + student.course); //Mathematics
+        console.log("Is Placed: " + student.isPlaced); //true
+
+        console.log("Accessing values using bracket notation");
+        console.log("Name: " + student["name"]); //Mary
+        console.log("Age: " + student["age"]); //22 
+        console.log("Course: " + student["course"]); //Mathematics
+        console.log("Is Placed: " + student["isPlaced"]); //true
+
+        // Mobile Object
+
+        const mobile = {
+            brand: "Vivo",
+            model: "X300",
+            warranty: "4 years"
+        };
+
+        console.log("Initial Object:");
+        console.log(mobile); // {brand: 'Vivo', model: 'X300', warranty: '4 years'}
+
+        // Add a new property price
+        mobile.price = 25000;
+        console.log("After adding price:");
+        console.log(mobile); // {brand: 'Vivo', model: 'X300', warranty: '4 years', price: 25000}
+        
+        // Update brand
+        mobile.brand = "Samsung";
+        console.log("After updating brand:");
+        console.log(mobile); // {brand: 'Samsung', model: 'X300', warranty: '4 years', price: 25000}
+
+        //Delete warranty
+        delete mobile.warranty;
+        console.log("After deleting warranty:");
+        console.log(mobile); // {brand: 'Samsung', model: 'X300', price: 25000}
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
