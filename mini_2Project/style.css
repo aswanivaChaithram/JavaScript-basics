@@ -6,7 +6,7 @@ body {
 }
 
 .container {
-    width: 700px;
+    width: 800px;
     margin: 40px auto;
     padding: 20px;
     border-radius: 8px;
@@ -34,6 +34,8 @@ input {
 
 button {
     padding: 8px 15px;
+    border: none;
+    background-color: #a8a6a6;
     cursor: pointer;
 }
 
@@ -51,15 +53,79 @@ th, td {
 }
 
 .edit {
-    background: orange;
-    color: white;
     border: none;
-    margin-right: 5px;
 }
 
 
 .delete {
-    background: red;
-    color: white;
     border: none;
+    margin-top: 5px;
+} 
+
+/* Responsive Design */
+
+@media (max-width: 760px) {
+
+    .container {
+        width: 90%;
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    form {
+        flex-wrap: wrap;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    button {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    table {
+        font-size: 14px;
+    }
 }
+
+@media (max-width: 460px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead {
+        display: none;
+    }
+
+    tr {
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        padding: 10px;
+        border-radius: 6px;
+    }
+
+    td {
+        border: none;
+        text-align: left;
+        padding: 6px 0;
+    }
+
+    td::before {
+        font-weight: bold;
+        display: inline-block;
+        width: 90px;
+    }
+
+    td:nth-child(1)::before { content: "Name: "; }
+    td:nth-child(2)::before { content: "Email: "; }
+    td:nth-child(3)::before { content: "Course: "; }
+    td:nth-child(4)::before { content: "Mobile: "; }
+
+    .edit, .delete {
+        width: 48%;
+        margin: 5px 1%;
+    }
+}
+
