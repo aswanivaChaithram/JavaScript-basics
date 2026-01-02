@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<script>
+    let person = {
+        name: "John",
+        age: 30,
+        state: "Mumbai",
+        country: "India",
+        greet() {
+            console.log("Hello, my name is " + this.name);
+        }
+    };
+
+    person.greet();
+    console.log("Name: " + person.name);
+    console.log("Age: " + person.age);
+    console.log("Location: " + person.state + ", " + person.country);
+    console.log("Initially :", person);
+
+    // Updating property
+    person.state = "Delhi";
+    console.log("After updating state:", person);
+
+    // Deleting property
+    delete person.country;
+    console.log("After deleting country:", person);
+
+    // Adding new property
+    person.profession = "Engineer";
+    console.log("After adding profession:", person);
+</script>
+<body>
+    
+</body>
+</html>
